@@ -1,23 +1,23 @@
 local Translations = {
     success = {
-        you_have_been_clocked_in = "You Have Been Clocked In",
+        you_have_been_clocked_in = "Vous avez été chronométré",
     },
     text = {
-        point_enter_warehouse = "[E] Enter Warehouse",
-        enter_warehouse= "Enter Warehouse",
-        exit_warehouse= "Exit Warehouse",
-        point_exit_warehouse = "[E] Exit Warehouse",
-        clock_out = "[E] Clock Out",
-        clock_in = "[E] Clock In",
-        hand_in_package = "Hand In Package",
-        point_hand_in_package = "[E] Hand In Package",
-        get_package = "Get Package",
-        point_get_package = "[E] Get Package",
-        picking_up_the_package = "Picking up the package",
-        unpacking_the_package = "Unpacking the package",
+        point_enter_warehouse = "[E] Entrer dans l'entrepôt",
+        enter_warehouse= "Entrer dans l'entrepôt",
+        exit_warehouse= "Entrepôt de sortie ",
+        point_exit_warehouse = "[E] Entrepôt de sortie",
+        clock_out = "[E] S'allumer",
+        clock_in = "[E] Horloge dans",
+        hand_in_package = "Transmettre à l'emballage",
+        point_hand_in_package = "[E] Transmettre à l'emballage",
+        get_package = "Obtenir un forfait",
+        point_get_package = "[E] Obtenir un forfait",
+        picking_up_the_package = "Ramasser le colis",
+        unpacking_the_package = "Déballage du package",
     },
     error = {
-        you_have_clocked_out = "You Have Clocked Out"
+        you_have_clocked_out = "Tu as chronométré"
     },
 }
 
