@@ -101,7 +101,7 @@ $(document).on('click', '.phone-recent-call', function(e){
                 if (status.CanCall) {
                     if (!status.InCall) {
                         if (QB.Phone.Data.AnonymousCall) {
-                            QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You started a anonymous call!");
+                            QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You started a anonymous call!");
                         }
                         $(".phone-call-outgoing").css({"display":"block"});
                         $(".phone-call-incoming").css({"display":"none"});
@@ -120,16 +120,16 @@ $(document).on('click', '.phone-recent-call', function(e){
 
                         QB.Phone.Data.currentApplication = "phone-call";
                     } else {
-                        QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You're already in a call!");
+                        QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You're already in a call!");
                     }
                 } else {
-                    QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is busy!");
+                    QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is busy!");
                 }
             } else {
-                QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is not available!");
+                QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is not available!");
             }
         } else {
-            QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You can't call yourself!");
+            QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You can't call yourself!");
         }
     });
 });
@@ -169,16 +169,16 @@ $(document).on('click', ".phone-keypad-key-call", function(e){
 
                         QB.Phone.Data.currentApplication = "phone-call";
                     } else {
-                        QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You're already in a call!");
+                        QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You're already in a call!");
                     }
                 } else {
-                    QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is busy!");
+                    QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is busy!");
                 }
             } else {
-                QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is not available!");
+                QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is not available!");
             }
         } else {
-            QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You can't call yourself!");
+            QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You can't call yourself!");
         }
     });
 });
@@ -240,7 +240,7 @@ $(document).on('click', '#new-chat-phone', function(e){
                 top: 0+"%"
             });
 
-            QB.Phone.Functions.ToggleApp("phone", "none");
+            QB.Phone.Functions.ToggleApp("Telephone", "none");
             QB.Phone.Functions.ToggleApp("whatsapp", "block");
             QB.Phone.Data.currentApplication = "whatsapp";
 
@@ -259,7 +259,7 @@ $(document).on('click', '#new-chat-phone', function(e){
             });
         }, 400)
     } else {
-        QB.Phone.Notifications.Add("fa fa-phone-alt", "Phone", "You can't whatsapp yourself..", "default", 3500);
+        QB.Phone.Notifications.Add("fa fa-phone-alt", "Telephone", "You can't whatsapp yourself..", "default", 3500);
     }
 });
 
@@ -510,16 +510,16 @@ SetupCall = function(cData) {
 
                         QB.Phone.Data.currentApplication = "phone-call";
                     } else {
-                        QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You're already in a call!");
+                        QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You're already in a call!");
                     }
                 } else {
-                    QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is in a call!");
+                    QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is in a call!");
                 }
             } else {
-                QB.Phone.Notifications.Add("fas fa-phone", "Phone", "This person is not available!");
+                QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "This person is not available!");
             }
         } else {
-            QB.Phone.Notifications.Add("fas fa-phone", "Phone", "You can't call your own number!");
+            QB.Phone.Notifications.Add("fas fa-phone", "Telephone", "You can't call your own number!");
         }
     });
 }
